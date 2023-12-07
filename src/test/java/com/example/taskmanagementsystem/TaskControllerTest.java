@@ -4,10 +4,10 @@ import com.example.taskmanagementsystem.controllers.TaskController;
 import com.example.taskmanagementsystem.filter.task.TaskFilter;
 import com.example.taskmanagementsystem.models.DTO.TaskDTO;
 import com.example.taskmanagementsystem.models.enums.TaskStatus;
-import com.example.taskmanagementsystem.responseAndAnswers.CommentRequest;
-import com.example.taskmanagementsystem.responseAndAnswers.CommentResponse;
-import com.example.taskmanagementsystem.responseAndAnswers.TaskResponse;
-import com.example.taskmanagementsystem.responseAndAnswers.TasksResponse;
+import com.example.taskmanagementsystem.requestsAndResponses.CommentRequest;
+import com.example.taskmanagementsystem.requestsAndResponses.CommentResponse;
+import com.example.taskmanagementsystem.requestsAndResponses.TaskResponse;
+import com.example.taskmanagementsystem.requestsAndResponses.TasksResponse;
 import com.example.taskmanagementsystem.services.CommentService;
 import com.example.taskmanagementsystem.services.TaskService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,16 +24,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
 import java.nio.file.AccessDeniedException;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.mockito.BDDMockito.given;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest

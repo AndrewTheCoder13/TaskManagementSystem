@@ -1,4 +1,4 @@
-package com.example.taskmanagementsystem.responseAndAnswers;
+package com.example.taskmanagementsystem.requestsAndResponses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.example.taskmanagementsystem.responseAndAnswers;
+package com.example.taskmanagementsystem.requestsAndResponses;
 
 import com.example.taskmanagementsystem.models.Comment;
 import com.example.taskmanagementsystem.models.DTO.TaskDTO;

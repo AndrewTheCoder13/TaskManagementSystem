@@ -1,13 +1,12 @@
 package com.example.taskmanagementsystem.services;
 
 import com.example.taskmanagementsystem.models.Comment;
-import com.example.taskmanagementsystem.models.DTO.CommentDTO;
 import com.example.taskmanagementsystem.models.Task;
 import com.example.taskmanagementsystem.models.User;
 import com.example.taskmanagementsystem.repository.CommentRepository;
 import com.example.taskmanagementsystem.repository.TaskRepository;
 import com.example.taskmanagementsystem.repository.UserRepository;
-import com.example.taskmanagementsystem.responseAndAnswers.CommentResponse;
+import com.example.taskmanagementsystem.requestsAndResponses.CommentResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
