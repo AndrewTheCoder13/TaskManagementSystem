@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/taskManagment
+    depends_on:
+      - postgres
+    command: sh -c "sleep 5 && java -jar /app.jar"
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: jdbc:postgresql://postgres:5432/taskManagment
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
